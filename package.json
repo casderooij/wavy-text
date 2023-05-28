@@ -1,8 +1,17 @@
 {
   "name": "wavy-text",
-  "private": true,
-  "version": "1.0.0",
   "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/wavy-text.umd.cjs",
+  "exports": {
+    ".": {
+      "import": "./dist/wavy-text.js",
+      "require": "./dist/wavy-text.umd.cjs"
+    }
+  },
+  "version": "1.0.0",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
