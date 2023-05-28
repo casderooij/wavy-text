@@ -41,7 +41,7 @@ class WavyText extends HTMLElement {
 
     let prevWidth = window.innerWidth;
 
-    window.addEventListener("resize", (e) => {
+    window.addEventListener("resize", () => {
       if (window.innerWidth != prevWidth) {
         prevWidth = window.innerWidth;
         this.constructDOM();
